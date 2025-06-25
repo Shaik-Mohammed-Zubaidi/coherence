@@ -18,7 +18,7 @@ This project implements a lightweight **emotionally-aware AI backend** for Coher
 
 ```
 .
-├── ai_response.py      # Handles AI message generation using LangChain + OpenAI
+├── agent.py      # Handles AI message generation using LangChain + OpenAI
 ├── main.py             # FastAPI app with endpoint logic
 ├── memory.py           # Stores last 3 check-ins per user (in-memory)
 ├── models.py           # Pydantic schemas for request/response
