@@ -1,0 +1,25 @@
+# --- AI / LLM integration ---
+openai==1.30.5             # remove if only using local HF models
+transformers==4.41.0       # comment out if you stick to OpenAI API
+tqdm==4.66.4               # nice progress bar when loading big models
+
+# --- Data validation & typing ---
+pydantic==2.7.1            # request / response schemas
+python-dotenv==1.0.1       # load OPENAI_API_KEY or HF_HOME from .env
+
+# --- HTTP utilities ---
+requests==2.32.3
+
+# --- Logging / monitoring (optional but handy) ---
+loguru==0.7.2
+
+# --- Prod WSGI server (for container / cloud deploy) ---
+gunicorn==22.0.0           # `gunicorn -k uvicorn.workers.UvicornWorker app:app`
+
+langgraph
+langchain_community
+langchain_openai
+langchain_anthropic
+langchain
+fastapi
+uvicorn
